@@ -47,7 +47,7 @@ DRR["5"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- DrRay.TopBar.ScrollingFrame.UIPadding
 DRR["6"] = Instance.new("UIPadding", DRR["4"]);
-DRR["6"]["PaddingLeft"] = UDim.new(0.014999999664723873, 0);
+DRR["6"]["PaddingLeft"] = UDim.new(0, 0.014999999664723873);
 
 -- DrRay.TopBar.DropShadowHolder
 DRR["7"] = Instance.new("Frame", DRR["2"]);
