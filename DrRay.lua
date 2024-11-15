@@ -1450,7 +1450,7 @@ function UILIB.newTab(name, img)
 	newTab.Parent = parent.MainBar
 	newTab.Name = name
 	newTab.Visible = false
-	DRR["4"].CanvasSize = UDim2.new(0, 0, DRR["5"].AbsoluteContentSize.X, 0)
+	DRR["4"].CanvasSize = UDim2.new(DRR["5"].AbsoluteContentSize.X, 0, 0, 0)
 	
 
 	local newTabBtn = parent.Folder.TabButtonReserved:Clone()
