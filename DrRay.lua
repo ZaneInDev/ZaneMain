@@ -31,6 +31,7 @@ DRR["4"]["CanvasSize"] = UDim2.new(0.10000000149011612, 0, 0, 0);
 DRR["4"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 36);
 DRR["4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
 DRR["4"]["BackgroundTransparency"] = 1;
+DRR["4"]["ScrollingDirection"] = Enum.ScrollingDirection.X;
 DRR["4"]["Size"] = UDim2.new(0.915977954864502, 0, 0.5196850299835205, 0);
 DRR["4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 DRR["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -1449,6 +1450,8 @@ function UILIB.newTab(name, img)
 	newTab.Parent = parent.MainBar
 	newTab.Name = name
 	newTab.Visible = false
+	DRR["4"].CanvasSize = UDim2.new(0, 0, DRR["5"].AbsoluteContentSize.X, 0)
+	
 
 	local newTabBtn = parent.Folder.TabButtonReserved:Clone()
 	newTabBtn.Parent = parent.TopBar.ScrollingFrame
