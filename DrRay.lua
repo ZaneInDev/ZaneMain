@@ -1625,10 +1625,10 @@ function UILIB.newTab(name, img)
 	function self.newSlider(Title, Description, MaxValue, MinimumValue, IsManageable, IncrementValue, Function)
         Name = tostring(Title) or "Slider"
         Desc = tostring(Description) or "Description"
-        Max = tonumber(MaxValue) or 100
-        Min = tonumber(MinimumValue) or 0
+        Max = MaxValue or 100
+        Min = MinimumValue or 0
         ManageSlider = IsManageable or false
-        Increment = tonumber(IncrementValue) or 1
+        Increment = IncrementValue or 1
         Func = Function or function() end
     
         local NewSlider = reserved.Slider:Clone()
