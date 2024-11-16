@@ -1623,8 +1623,8 @@ function UILIB.newTab(name, img)
 
 
 	function self.newSlider(Title, Description, MaxValue, MinimumValue, IsManageable, IncrementValue, Function)
-        Name = tostring(Title) or "Slider"
-        Desc = tostring(Description) or "Description"
+        Name = Title or "Slider"
+        Desc = Description or "Description"
         Max = MaxValue or 100
         Min = MinimumValue or 0
         ManageSlider = IsManageable or false
