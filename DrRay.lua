@@ -1661,7 +1661,6 @@ function UILIB.newTab(name, img)
         local Percent
         local MouseDown = false
         local DelayTw = 0.3
-        local InteractionEnded = false
     
         local function Update()
             MouseDown = true
@@ -1690,13 +1689,8 @@ function UILIB.newTab(name, img)
         UIS.InputEnded:Connect(function(Input)
             if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
                 MouseDown = false
-                InteractionEnded = true  -- Interaction ends, set to true
             end
         end)
-    
-        return function()
-            return InteractionEnded  -- Return the interaction state
-        end
     end
 
 	
