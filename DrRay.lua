@@ -1628,7 +1628,7 @@ function UILIB.newTab(name, img)
         Max = Max or 100
         Min = Min or 0
         ManageSlider = ManageSlider or false
-        Increment = Increment or 1
+        Increment = tonumber(Increment) or 1
         Func = Func or function() end
     
         local NewSlider = reserved.Slider:Clone()
